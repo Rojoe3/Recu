@@ -14,6 +14,10 @@ section{
     background: linear-gradient(89.59deg, #6788ff 22.6%, #c5ffe5 78.98%);
     
 }
+
+body{
+overflow: auto;
+}
 header{
     position: absolute;
     top: 0%;
@@ -146,7 +150,8 @@ header ul li a{
 }
 @media (max-width: 776px){
     body{
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
     header{
         padding: 20px;
