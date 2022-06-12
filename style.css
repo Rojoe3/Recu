@@ -1,6 +1,6 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 section{
@@ -145,6 +145,9 @@ header ul li a{
     clip-path: circle(600px at right);
 }
 @media (max-width: 776px){
+    body{
+        overflow: hidden;
+    }
     header{
         padding: 20px;
     }
