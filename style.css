@@ -1,0 +1,232 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(89.59deg, #6788ff 22.6%, #c5ffe5 78.98%);
+    
+}
+header{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ header .logo{
+     position: relative;
+     max-width: 80px;
+ }
+  header ul{
+      position: relative;
+      display: flex;
+  }
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    color: cornsilk;
+    font-weight: 900;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.log{
+    padding: 3px 20px;
+    background: green;
+    border-radius: 40px;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2{
+    color: #181F58;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 700;
+}
+.content .textBox h2 span{
+    color: #0014a8;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.content .textBox p{
+    color: #181F58;
+}
+.content .textBox p span{
+    font-size: 2em;
+    font-weight: 700;
+}
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: green;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.content .imgBox img{
+    max-width: 500px;
+}
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    cursor: pointer;
+}
+.thumb li :hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+    max-width: 90px;
+}
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #080E3A;
+    clip-path: circle(600px at right);
+}
+@media (max-width: 776px){
+    header{
+        padding: 20px;
+    }
+     header .logo{
+         max-width: 60px;
+     }
+     header ul{
+         display: none;
+     }
+     .toggle{
+         position: relative;
+         width: 30px;
+         height: 30px;
+         cursor: pointer;
+         background: url(menu.png);
+         background-size: 30px;
+         background-position: center;
+         background-repeat: no-repeat;
+         z-index: 11;
+     }
+     .toggle.active{
+         position: fixed;
+         right: 20px;
+         background: url(close.png);
+         background-size: 19px;
+         background-position: center;
+         background-repeat: no-repeat; 
+     }
+     header ul.navigation.active{
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         background:  linear-gradient(
+            96.18deg,
+            rgba(103, 136, 255, 1) 9.89%,
+            rgba(85, 74, 179, 0.9) 91.83%
+          );
+         z-index: 10;
+     }
+     header ul li a{
+        font-size: 1.2em;
+        margin: 10px 0;
+     }
+     section{
+         padding: 20px 20px 120px;
+     }
+     .content{
+         flex-direction: column;
+         margin-top: 100px;
+     }
+     .content .textBox h2{
+         font-size: 2.5em;
+         margin-bottom: 15px;
+     }
+     .content .textBox{
+         max-width: 100%;
+     }
+     .content .imgBox{
+         max-width: 100%;
+         justify-content: center;
+     }
+     .content .imgBox img{
+         max-width: 420px;
+     }
+     .thumb li img{
+         max-width: 50px;
+     }
+     .circle{
+         clip-path: circle(370px at bottom);
+     }
+     .sci{
+         background: #1E2B8C;
+         right: 0%;
+         width: 50px;
+         border-top-left-radius: 10px;
+         border-bottom-left-radius: 10px;
+     }
+
+} 
